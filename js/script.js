@@ -27,3 +27,22 @@ $(document).ready(function () {
       $('.animated-icon3').toggleClass('open');
     });
   });
+
+//FormSubmission
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbweYa_tHQpHLWyCclfG8QILOQqzbw7oV35hCzikthfl41ZW9-_A0N6edGQGJQ8or51c/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
