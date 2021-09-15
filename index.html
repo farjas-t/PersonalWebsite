@@ -21,12 +21,21 @@
                 <h2>Farjas</h2>
             </div>
             <div class="col-md-6 col-3">
-                <nav class="navbar navbar-expand-md navbar-dark bg-primary" id="myNavbar">
-                    <button id="navBtn" class="navbar-toggler third-button ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <!--<span class="navbar-toggler-icon"></span>-->
-                      <div class="animated-icon3"><span></span><span></span><span></span></div>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+              <input type='checkbox' id='toggle' style='display:none;' />
+              <label class='toggle-btn toggle-btn__cross' for='toggle' id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </label>
+              <nav>
+                <ul>
+                  <li><a href="#start">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+                  <div class="collapse navbar-collapse navbar navbar-expand-md navbar-dark bg-primary" id="navbarNav">
                       <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link" href="#start">About</a>
