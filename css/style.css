@@ -350,3 +350,9 @@ header nav ul li a:hover {
        transform: scale(1.05);
     }
   
+/*scrolladjust*/
+.bookmark {
+  margin-top:-120px;
+  padding-bottom:120px; 
+  display:block;
+}
